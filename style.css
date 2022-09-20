@@ -1,0 +1,93 @@
+body{
+    margin: 0;
+    width: 100%;
+    background-image: url(bodyimg6.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-x: hidden;
+    color: aliceblue;
+}
+header{
+    background-image: url(header6.jpg); height: 3em; width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 1em 1em;
+}
+.heading{
+    margin-top: 1%;
+    display: flex;
+    justify-content: space-between;
+}
+h1{
+    -webkit-text-stroke: 1px aliceblue;
+    color: transparent;
+    font-size: 50px;
+    position: relative; right: 5em;
+}
+h1::before{
+    content: attr(data-text);
+    -webkit-text-stroke: 0px #383d52;
+    border-right: 2px solid green;
+    overflow: hidden;
+    animation: animate 6s linear infinite;
+}
+@keyframes animate{
+    0%{
+        width: 0;
+    }
+    90%{
+        width: 100%s;
+    }
+}
+.socials{
+    justify-content: space-between;
+    width: 5em;
+    font-size: 1.5em;
+    color: wheat;
+
+}
+a, .link{
+    text-decoration: none;
+    color: black;
+    color: rgba(128, 128, 128, 0.779);
+    font-size: 1.2em;
+}
+a, .link:hover{
+    color: aliceblue;
+}
+.bod{
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+}
+.attributes{
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+}
+.tag{
+    display: flex;
+}
+
+.img{
+    position: relative; left: 10%;
+    opacity: 0.5;
+}
+.introduction1{
+    width: 100%;
+}
+button{
+    height: 3em;
+    width: 12em;
+    margin-top: 5%;
+    margin-left: 50%;
+    border-radius: 10px;
+    border: none;
+    background-color:hsl(208,34%,27%); 
+}
+a, .butn{
+    color: aliceblue;
+}
+button:hover{
+    box-shadow: 0.5px 1px 0px 3px grey;
+}
