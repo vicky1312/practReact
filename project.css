@@ -1,14 +1,19 @@
-body{
-    margin: auto;
-    width: 100%;
-    background-image: url(bodyimg6.png);
+html{
+    background-image: url(Images/bodyimg6.png);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: bottom;
+    min-height: 100%;
+}
+body{
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
     overflow-x: hidden;
     color: aliceblue;
 }
 header{
-    background-image: url(header6.jpg); height: 3em; width: 100%;
+    background-image: url(Images/header6.jpg); height: 3em; width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
     padding: 1em 1em;
@@ -17,6 +22,7 @@ header{
     margin-top: 1%;
     display: flex;
     justify-content: space-between;
+    font-family: 'Nunito Sans', sans-serif;
 }
 .socials{
     justify-content: space-between;
@@ -24,6 +30,9 @@ header{
     font-size: 1.5em;
     color: wheat;
 
+}
+img{
+    border-radius: 50%;
 }
 a, .link{
     text-decoration: none;
@@ -44,56 +53,75 @@ a, .link:hover{
 }
 p{
     text-align: justify;
+    font-family: 'Nunito Sans', sans-serif;
+    color: whitesmoke;
 }
 .pracimg{
-    width: 40%;
+    width: 15em;
     height: 10em;
+    position: relative; left: 2em;
 }
 .pracpar{
-    width: 40%;
+    width: 20em;
 }
 .projimg{
-    width: 100%;
+    width: 15em;
     height: 10em;
+    position: relative; left: 2em;
+}
+.projpar{
+    width: 20em;
 }
 .hudimg{
+    width: 15em;
     height: 10em;
-    width: 55%;
+    position: relative; left: 2em;
 }
 .pracport{
     position: relative; left: 2em;
+    border: 2px solid paleturquoise;
+    padding: 3px;
+    box-shadow: 1px 2px 3px 2px paleturquoise;
 }
 .pracproj{
-    position: relative; right: 8em;
+    position: relative; left: 8em;
+    border: 2px solid paleturquoise;
+    padding: 3px;
+    box-shadow: 1px 2px 3px 2px paleturquoise;
 }
 .huddle{
-    position: relative; left: 6em;
+    position: relative; left: 14em;
+    border: 2px solid paleturquoise;
+    padding: 3px;
+    box-shadow: 1px 2px 3px 2px paleturquoise;
 }
 .hudpar{
-    width: 55%;
+    width: 20em;
 }
 button{
     height: 3em;
     border-radius: 10px;
     border: none;
-    background-color:hsl(208,34%,27%); 
+    background-color:hsl(208,34%,27%);
 }
 a, .butn{
     color: aliceblue;
+    font-family: 'Nunito Sans', sans-serif;
 }
 button:hover{
     box-shadow: 0.5px 1px 0px 3px grey;
 }
 .butn1{
-    width: 40%;
+    width: 100%;
+    margin-top: 5%;
 }
 .butn2{
     margin-top: 22%;
     width: 100%;
 }
 .butn3{
-    margin-top: 4%;
-    width: 55%;
+    margin-top: 11%;
+    width: 100%;
 }
 .secondrow{
     display: flex;
@@ -101,41 +129,59 @@ button:hover{
 }
 .grid{
 position: relative; left: 2em;
+border: 2px solid paleturquoise;
+    padding: 3px;
+    box-shadow: 1px 2px 3px 2px paleturquoise;
 }
 .chess{
-position: relative; left: 7.3em;
+position: relative; left: 8em;
+border: 2px solid paleturquoise;
+    padding: 3px;
+    box-shadow: 1px 2px 3px 2px paleturquoise;
+
 }
 .rosa{
-position: relative; left: 26.5%;
+position: relative; left: 18%;
+border: 2px solid paleturquoise;
+    padding: 3px;
+    box-shadow: 1px 2px 3px 2px paleturquoise;
 }
 .gridimg{
-    width: 70%;
+    width: 15em;
     height: 10em;
+    position: relative; left: 2em;
 }
 .gridpar{
-    width: 70%;
+    width: 20em;
 }
 .chessimg{
-    width: 100%;
+    width: 15em;
     height: 10em;
+    position: relative; left: 2em;
+}
+.chesspar{
+    width: 20em;
 }
 .rosaimg{
-    width: 35%;
+    width: 15em;
     height: 10em;
+    position: relative; left: 2em;
 }
 .rosapar{
-    width: 35%;
+    width: 20em;
 }
 .butn4{
-    margin-top: 20.5%;
-    width: 70%;
+    margin-top: 38%;
+    width: 100%;
+
 }
 .butn5{
-    margin-top: 45%;
+    margin-top: 44%;
     width: 100%;
 }
 .butn6{
-    width: 35%;
+    width: 100%;
+    margin-top: 14.5%;
 }
 .thirdrow{
     display: flex;
@@ -143,28 +189,38 @@ position: relative; left: 26.5%;
 }
 .tip{
 position: relative; left: 2em;
+border: 2px solid paleturquoise;
+    padding: 3px;
+    box-shadow: 1px 2px 3px 2px paleturquoise;
 }
 .djangoapp{
-position: relative; right: 2.5em;
+position: relative; left: 8em;
+border: 2px solid paleturquoise;
+    padding: 3px;
+    box-shadow: 1px 2px 3px 2px paleturquoise;
+
 }
 .tipimg{
-    width: 55%;
+    width: 15em;
     height: 10em;
+    position: relative; left: 2em;
 }
 .tippar{
-    width: 55%;
+    width: 20em;
 }
 .appimg{
-    width: 37%;
+    width: 15em;
     height: 10em;
+    position: relative; left: 2em;
 }
 .apppar{
-    width: 37%;
+    width: 20em;
 }
 .butn7{
-    width: 55%;
-    margin-top: 10.5%;
+    width: 100%;
+    margin-top: 16.5%;
 }
 .butn8{
-    width: 37%;
+    width: 100%;
+    margin-top: -1%;
 }
