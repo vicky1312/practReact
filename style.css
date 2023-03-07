@@ -1,14 +1,19 @@
-body{
-    margin: 0;
-    width: 100%;
-    background-image: url(bodyimg6.png);
+html{
+    background-image: url(Images/bodyimg6.png);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: bottom;
+    min-height: 100%;
+}
+body{
+        margin: 0 auto;
+    width: 100%;
+    padding: 0;
     overflow-x: hidden;
     color: aliceblue;
 }
 header{
-    background-image: url(header6.jpg); height: 3em; width: 100%;
+    background-image: url(Images/header6.jpg); height: 3em; width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
     padding: 1em 1em;
@@ -17,12 +22,19 @@ header{
     margin-top: 1%;
     display: flex;
     justify-content: space-between;
+    width: 100%;
+    font-family: 'Nunito Sans', sans-serif;
 }
 h1{
     -webkit-text-stroke: 1px aliceblue;
     color: transparent;
     font-size: 50px;
-    position: relative; right: 5em;
+    position: relative; right: 5.5em;
+    font-family: 'Nunito Sans', sans-serif;
+}
+h3{
+    font-family: 'Nunito Sans', sans-serif;
+    color: rgba(255, 0, 0, 0.495);
 }
 h1::before{
     content: attr(data-text);
@@ -44,7 +56,6 @@ h1::before{
     width: 5em;
     font-size: 1.5em;
     color: wheat;
-
 }
 a, .link{
     text-decoration: none;
@@ -56,38 +67,90 @@ a, .link:hover{
     color: aliceblue;
 }
 .bod{
-    display: flex;
+    display: block;
     justify-content: center;
-    margin-top: 3%;
+    margin-top: 10%;
+    font-family: 'Nunito Sans', sans-serif;
 }
 .attributes{
     display: flex;
     justify-content: center;
     justify-content: space-between;
+    margin-top: 10%;
+    font-family: 'Nunito Sans', sans-serif;
 }
 .tag{
     display: flex;
 }
-
+img{
+    border-radius: 70%;
+    width: 20em;
+    height: 17em;
+}
 .img{
-    position: relative; left: 10%;
+    position: relative; left: 25%; top: 1%;
     opacity: 0.5;
+    border-radius: 50%;
 }
 .introduction1{
     width: 100%;
+    display: flex;
+}
+.intro{
+    position: relative; left: 25%;
+}
+p{
+    width: 20em;
+    font-size: 20px;
+    font-family: 'Nunito Sans', sans-serif;
+    color: palevioletred;
+}
+.introduction{
+    display: block;
 }
 button{
-    height: 3em;
+    height: 4em;
     width: 12em;
     margin-top: 5%;
-    margin-left: 50%;
     border-radius: 10px;
     border: none;
     background-color:hsl(208,34%,27%); 
 }
 a, .butn{
     color: aliceblue;
+    font-family: 'Nunito Sans', sans-serif;
 }
 button:hover{
     box-shadow: 0.5px 1px 0px 3px grey;
+}
+#code{
+    font-size: 5em;
+    display: flex;
+}
+.fonts{
+    display: flex;
+    position: relative; left: 30%; top: 5em;
+}
+.fa-js{
+    color: red;
+    transform: rotate(45deg);
+}
+.fa-python{
+    color: yellow;
+    position: relative; left: 1em;
+    transform: rotate(45deg);
+}
+.fa-css3-alt{
+    color: blue;
+    position: relative; left: 2em;
+    transform: rotate(30deg);
+}
+.fa-react{
+    color: purple;
+    position: relative; left: 4em;
+    transform: rotate(45deg);
+}
+.fa-code{
+    position: relative; left: 3em;
+    transform: rotate(35deg);
 }
